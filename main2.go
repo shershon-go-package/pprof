@@ -17,7 +17,8 @@ func init() {
 		}
 	}()
 }
-func main3() {
+
+func main2() {
 	engine := gin.Default()
 	engine.GET("/test", func(context *gin.Context) {
 		context.JSON(200, gin.H{

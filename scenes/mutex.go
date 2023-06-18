@@ -9,9 +9,10 @@ type student struct {
 	idList []int
 	mutex  sync.Mutex
 }
+
 func UseMutexDemo() {
 	var stu student
-	for i := 1 ; i < 10000; i++{
+	for i := 1; i < 10000; i++ {
 		id := i
 		go func() {
 			// 加锁
